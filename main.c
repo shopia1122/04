@@ -3,15 +3,17 @@
 
 int main(int argc, char *argv[])
 {
-    int sec, hour, min;
+    int year, leap;
     
-    printf("input the second : ");
-    scanf("%d", &sec);
     
-    hour = sec / 60;
-    min = sec % 60;       // 얘 위치를 input 앞으로 옮기면 실행이 안된다. 왜 그럴까.  
     
-    printf("the time is %d : %d\n", hour, min);
+    printf("input year: ");
+    scanf("%d", &year);
+    
+    leap = ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+    
+    printf("Is the year %d the leap year? : %d\n", year, leap);
+     
     
     
     
