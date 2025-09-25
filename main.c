@@ -3,19 +3,20 @@
 
 int main(int argc, char *argv[])
 {
-    int first, second;
+    int sec, hour, min;
     
-    printf("input two integers : ");
-    scanf("%d %d", &first, &second);
+    printf("input the second : ");
+    scanf("%d", &sec);
     
-    printf("+ result is %d\n", first + second);
-    printf("- result is %d\n", first - second);
-    printf("* result is %d\n", first * second);
-    printf("/ result is %d\n", first / second);
-    printf("%% result is %d\n", first % second);
+    hour = sec / 60;
+    min = sec % 60;       // 얘 위치를 input 앞으로 옮기면 실행이 안된다. 왜 그럴까.  
     
-    printf("-------------------------------------\n");
-    printf("Process exited after 2.236 seconds with return value 0\n");
+    printf("the time is %d : %d\n", hour, min);
+    
+    
+    
+    
+    
   
   system("PAUSE");	
   return 0;
