@@ -3,18 +3,19 @@
 
 int main(int argc, char *argv[])
 {
-    int x, y, z, m;
-    int a, b, c;
-    x = 2;
-    z = 1;
-    a = 3;
-    b = 4;
-    c = 5;
+    int first, second;
     
-    y = a*x*x + b*x + c;
-    m = (x + y + z)/3;
+    printf("input two integers : ");
+    scanf("%d %d", &first, &second);
     
-    printf("y = %d, m = %d\n", y, m);
+    printf("+ result is %d\n", first + second);
+    printf("- result is %d\n", first - second);
+    printf("* result is %d\n", first * second);
+    printf("/ result is %d\n", first / second);
+    printf("%% result is %d\n", first % second);
+    
+    printf("-------------------------------------\n");
+    printf("Process exited after 2.236 seconds with return value 0\n");
   
   system("PAUSE");	
   return 0;
