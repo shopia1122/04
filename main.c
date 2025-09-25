@@ -3,15 +3,16 @@
 
 int main(int argc, char *argv[])
 {
-   int x, sec, min;
+   int x, sec, min, hour;
    
    printf("input the second: ");
    scanf("%d", &x);
    
-   min = x /60;
+   hour = x / 3600;
+   min = (x % 3600) / 60;
    sec = x % 60;
    
-   printf("the time is %d : %d\n", min, sec);
+   printf("the time is %d: %d : %d\n", hour, min, sec);
     
     
     
@@ -20,3 +21,4 @@ int main(int argc, char *argv[])
   system("PAUSE");	
   return 0;
 }
+
